@@ -1,4 +1,5 @@
-// app/api/cron/send-reminders/route.ts
+// app/api/cron/send-reminders.ts
+// This handles /api/cron/send-reminders (without trailing slash)
 import { NextRequest, NextResponse } from "next/server";
 import { sendScheduledReminders, cleanupOldReminders } from "@/actions/email";
 
